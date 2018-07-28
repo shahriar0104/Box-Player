@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.halilibo.sample.MainVideoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <com.halilibo.bettervideoplayer.BetterVideoPlayer
+            android:id="@+id/bvp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            bvp:bvp_captionSize="12sp"
+            android:layout_gravity="center"
+            android:keepScreenOn="true"
+            bvp:bvp_autoPlay="true"/>
+
+        <ImageView
+            android:id="@+id/fulscreen_activity_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="3.5pt"
+            android:layout_marginRight="4.5pt"
+            android:alpha="0"
+            android:background="@drawable/ic_screen_rotation" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
